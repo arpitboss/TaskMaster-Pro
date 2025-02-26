@@ -22,7 +22,7 @@ function App() {
     if (activeSection === "reports") {
       initCharts();
     }
-  }, [tasks, activeSection]);
+  }, [tasks, activeSection]); //eslint-disable-line react-hooks/exhaustive-deps
 
   const addTask = (taskData: NewTaskData) => {
     const newTask: Task = {
